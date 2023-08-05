@@ -1,0 +1,10 @@
+.ant-btn-primary {
+  color: #000;
+  border-color: #b8ff65;
+  background: #b8ff65;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+
+  &:hover {
+    background: rgb(159, 209, 102) 65;
+  }
+}

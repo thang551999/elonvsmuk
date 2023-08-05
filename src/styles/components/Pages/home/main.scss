@@ -1,0 +1,24 @@
+@import './match-box.scss';
+@import './tatic.scss';
+@import './millions-of-fan.scss';
+@import './guess-winner.scss';
+@import './how-to-buy.scss';
+@import './tokenomics.scss';
+@import './expectation.scss';
+
+.home-wrapper {
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 810px;
+    margin: 0 auto;
+
+    img {
+      object-fit: fill;
+
+      @media screen and (max-width: 768px) {
+        object-fit: cover;
+      }
+    }
+  }
+}

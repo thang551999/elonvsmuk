@@ -1,0 +1,14 @@
+.error-text {
+  margin-top: 4px;
+
+  color: #ff5858;
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+
+  // 575
+  @media screen and (max-width: $breakpoint_mobile_max) {
+    font-size: 12px;
+  }
+}

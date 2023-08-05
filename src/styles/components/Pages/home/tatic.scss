@@ -1,0 +1,82 @@
+.tatic-section {
+  width: 1170px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  padding: 40px;
+
+  border-radius: 24px;
+  border: 1px solid #fff;
+  background: linear-gradient(135deg, rgba(255, 192, 69, 0.4) 0%, rgba(252, 255, 116, 0.4) 100%);
+  backdrop-filter: blur(6.5px);
+
+  @media screen and (max-width: 1180px) {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .heading {
+    width: 100%;
+    position: relative;
+
+    .svg-1,
+    .svg-2 {
+      position: absolute;
+
+      @media screen and (max-width: 1180px) {
+        width: 37px;
+        height: 23px;
+      }
+    }
+
+    .svg-2 {
+      bottom: 0;
+      right: 0;
+    }
+
+    &__description {
+      padding-top: 45px;
+      max-width: 822px;
+      width: 100%;
+      margin: 0 auto;
+
+      @media screen and (max-width: 1180px) {
+        max-width: 100%;
+        width: 100%;
+        padding-top: 25px;
+      }
+
+      p {
+        color: #000;
+        text-align: center;
+        font-family: 'Rubik Mono One';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media screen and (max-width: 1180px) {
+          font-size: 14px;
+        }
+
+        div {
+          color: #ec3a2d;
+          font-family: 'Rubik Mono One';
+        }
+      }
+    }
+  }
+
+  &__image {
+    margin: 36px 31px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      margin: 0;
+      margin-top: 30px;
+    }
+  }
+}

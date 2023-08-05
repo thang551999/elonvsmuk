@@ -1,0 +1,22 @@
+.app-footer {
+  width: 100%;
+
+  background: #363636;
+  padding: 67px 0px 61px 0px;
+
+  &-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    color: var(--neutral-2, #fff);
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

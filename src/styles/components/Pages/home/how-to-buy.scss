@@ -1,0 +1,127 @@
+.how-to-buy {
+  width: 100%;
+  margin-top: 74px;
+  padding-top: 65px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  &-background {
+    width: 1020px;
+    height: 1020px;
+    position: absolute;
+    top: 65px;
+  }
+
+  &-container {
+    .title {
+      margin-top: 13px;
+
+      color: #ec3a2d;
+      text-align: center;
+      font-family: 'Rubik Mono One';
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      @media screen and (max-width: 568px) {
+        font-size: 20px;
+      }
+    }
+
+    &-wrap {
+      max-width: 1170px;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 91px;
+
+      display: flex;
+      flex-flow: row wrap;
+      gap: 80px 100px;
+
+      @media screen and (max-width: 1280px) {
+        flex-flow: column nowrap;
+        padding: 0 48px;
+      }
+
+      @media screen and (max-width: 568px) {
+        gap: 70px;
+      }
+
+      .step-wrapper {
+        display: flex;
+        flex: 1 1 500px;
+        padding: 20px 20px 20px 80px;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 0;
+
+        border-radius: 24px;
+        background: linear-gradient(134deg, #ff6258 0%, #441a11 100%);
+        box-shadow: 0px 10px 20px 0px rgba(243, 128, 55, 0.3);
+
+        position: relative;
+
+        @media screen and (max-width: 1280px) {
+          flex: 1 1 0px;
+        }
+
+        @media screen and (max-width: 568px) {
+          padding: 20px 12px 20px 60px;
+        }
+
+        &-logo {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(-50%, -50%);
+        }
+
+        span {
+          color: #fff;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+
+        h2 {
+          color: #fff;
+          font-family: Poppins;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 78px; /* 243.75% */
+
+          @media screen and (max-width: 568px) {
+            margin-top: 8px;
+            font-size: 18px;
+            line-height: normal;
+          }
+        }
+
+        p {
+          color: #fff;
+          text-shadow: 0px 4px 54px rgba(0, 0, 0, 0.1);
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px; /* 160% */
+
+          @media screen and (max-width: 568px) {
+            margin-top: 8px;
+
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

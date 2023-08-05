@@ -1,0 +1,99 @@
+.tokenomics-container {
+  margin-top: 180px;
+
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 63px;
+    padding: 0 20px;
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: 'Rubik Mono One';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__supply {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    padding: 20px;
+    align-items: center;
+
+    border-radius: 24px;
+    background: linear-gradient(134deg, #ff6258 0%, #441a11 100%);
+    box-shadow: 0px 10px 20px 0px rgba(243, 128, 55, 0.3);
+
+    color: #ffd748;
+    text-align: center;
+    font-family: 'Rubik Mono One';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 78px;
+
+    @media screen and (max-width: 768px) {
+      padding: 12px;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  &__chart {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 38px;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-flow: column nowrap;
+      gap: 54px;
+    }
+
+    .chart-description {
+      width: 402px;
+      height: 384px;
+      padding: 20px;
+      flex-shrink: 0;
+
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+
+      list-style-type: disc;
+
+      background: rgba(87, 34, 24, 0.65);
+
+      color: #fff;
+      text-shadow: 0px 4px 54px rgba(0, 0, 0, 0.1);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      li {
+        font-family: 'Rubik Mono One';
+        margin-left: 20px;
+      }
+    }
+  }
+}

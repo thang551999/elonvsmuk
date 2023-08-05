@@ -1,0 +1,132 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: unset;
+  color: unset;
+  height: unset;
+
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 0 20px;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+
+  &__navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    gap: 12px;
+
+    a {
+      padding: 8px 16px;
+
+      &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+
+      &.active {
+        border-radius: 8px;
+        background: #ec3a2d;
+      }
+
+      span {
+        color: #fff;
+        text-align: justify;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: 'Rubik Mono One';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px; /* 183.333% */
+      }
+    }
+  }
+
+  &__wallet-btn {
+    .tw-connect-wallet {
+      border-radius: 12px;
+      border: 3px solid #fff;
+      background: linear-gradient(180deg, #ec3a2d 0%, #2b0d0b 100%);
+
+      padding: 16px 24px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 6px;
+
+      color: #fff;
+      text-align: justify;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Rubik Mono One;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px; /* 146.667% */
+
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.mobile-header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 0 20px;
+
+  svg {
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
+
+.mobile-drawer {
+  background: unset !important;
+  backdrop-filter: blur(16px);
+
+  @media screen and (max-width: 768px) {
+    backdrop-filter: unset;
+    backdrop-filter: blur(6px);
+  }
+
+  .ant-drawer-header {
+    border: none;
+    margin-top: 26px;
+
+    .ant-drawer-close {
+      display: none;
+    }
+
+    .mobile-header-container {
+      padding: 0;
+    }
+  }
+
+  .app-header__navigation {
+    flex-flow: column nowrap;
+
+    a {
+      span {
+        text-align: center;
+      }
+    }
+  }
+}

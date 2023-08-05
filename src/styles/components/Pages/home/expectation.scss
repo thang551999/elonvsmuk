@@ -1,0 +1,172 @@
+.expectation-container {
+  max-width: 1212px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding-bottom: 90px;
+
+  @media screen and (max-width: 1028px) {
+    max-width: 100%;
+    margin-top: 76px;
+  }
+
+  .expectation-wrapper {
+    position: relative;
+    width: 100%;
+
+    border-radius: 24px;
+    border: 1px solid #fff;
+    backdrop-filter: blur(6.5px);
+    overflow: hidden;
+
+    padding: 20px 20px 50px;
+
+    @media screen and (max-width: 568px) {
+      background: linear-gradient(180deg, #000 0%, #c8182e 14.08%, rgba(31, 3, 7, 0) 52.6%, #210407 78.65%, #000 100%),
+        lightgray -757.232px 210.258px / 527.629% 75.203% no-repeat;
+    }
+
+    h4 {
+      margin-top: 20px;
+
+      color: #000;
+      text-align: center;
+      font-family: 'Rubik Mono One';
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      position: relative;
+      z-index: 1;
+
+      @media screen and (max-width: 568px) {
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+
+    .phase {
+      margin-top: 80px;
+
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      gap: 30px;
+
+      @media screen and (max-width: 568px) {
+        margin-top: 24px;
+      }
+
+      &-container {
+        max-width: 300px;
+        min-height: 223px;
+        height: 100%;
+        width: 100%;
+
+        flex: 1 1 300px;
+        padding: 20px 12px;
+
+        border-radius: 24px;
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 10px 20px 0px rgba(243, 128, 55, 0.3);
+        backdrop-filter: blur(4.5px);
+
+        h3 {
+          color: #fff;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 30px;
+          text-transform: uppercase;
+        }
+
+        ul {
+          list-style-type: disc;
+
+          margin-top: 12px;
+
+          color: #fff;
+          font-family: Poppins;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 22px;
+
+          li {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .disclaimer-container {
+    margin-top: 80px;
+
+    position: relative;
+    width: 100%;
+    height: 435px;
+
+    border-radius: 24px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.76) 0%, rgba(0, 0, 0, 0.76) 100%), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 0px 0px #1f286d inset;
+    backdrop-filter: blur(21px);
+
+    overflow: hidden;
+
+    @media screen and (max-width: 568px) {
+      height: 500px;
+    }
+
+    h3 {
+      margin-top: 80px;
+
+      color: #fff;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: 'Rubik Mono One';
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      position: relative;
+      z-index: 1;
+
+      @media screen and (max-width: 568px) {
+        margin-top: 44px;
+        font-size: 20px;
+      }
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      width: 770px;
+      margin: 0 auto;
+      margin-top: 31px;
+
+      color: #fff;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      text-shadow: 0px 4px 54px rgba(0, 0, 0, 0.1);
+      font-family: 'Poppins';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+
+      position: relative;
+      z-index: 1;
+
+      @media screen and (max-width: 568px) {
+        max-width: calc(100% - 40px);
+        margin-top: 11px;
+      }
+    }
+  }
+}

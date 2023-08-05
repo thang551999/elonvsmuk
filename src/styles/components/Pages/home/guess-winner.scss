@@ -1,0 +1,157 @@
+.guess-winner {
+  width: 1212px;
+  margin: 0 auto;
+  margin-top: 24px;
+
+  padding: 40px 21px;
+
+  border-radius: 24px;
+  border: 1px solid #fff;
+  background: linear-gradient(135deg, rgba(255, 192, 69, 0.4) 0%, rgba(252, 255, 116, 0.4) 100%);
+  backdrop-filter: blur(6.5px);
+
+  @media screen and (max-width: 1180px) {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &-guesser {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 37px;
+
+    @media screen and (max-width: 980px) {
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 980px) {
+      gap: 0;
+    }
+
+    &-right {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      &-top {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+
+        @media screen and (max-width: 980px) {
+          justify-content: center;
+        }
+
+        @media screen and (max-width: 568px) {
+          flex-flow: column nowrap;
+        }
+
+        .element {
+          display: flex;
+          flex-flow: column nowrap;
+          gap: 20px;
+          align-items: center;
+
+          .avatar {
+            position: relative;
+          }
+
+          p {
+            color: #000;
+            text-align: center;
+            font-family: 'Rubik Mono One';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+          }
+
+          button {
+            border-radius: 12px;
+            border: 3px solid #fff;
+            background: linear-gradient(180deg, #ec3a2d 0%, #2b0d0b 100%);
+
+            display: flex;
+            padding: 16px 24px;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 6px;
+
+            color: #fff;
+            text-align: justify;
+            font-family: 'Rubik Mono One';
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+
+            &:hover {
+              cursor: pointer;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+
+      &-bottom {
+        max-width: 446px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        @media screen and (max-width: 568px) {
+          margin-top: 20px;
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+
+          color: #000;
+          text-align: center;
+          font-feature-settings: 'clig' off, 'liga' off;
+          font-family: 'Rubik Mono One';
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+          @media screen and (max-width: 568px) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &-soldier {
+    margin-top: 20px;
+
+    width: 100%;
+
+    p {
+      margin-top: 70px;
+
+      color: #000;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: 'Rubik Mono One';
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      @media screen and (max-width: 568px) {
+        margin-top: 20px;
+
+        font-size: 12px;
+      }
+    }
+  }
+}

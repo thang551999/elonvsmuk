@@ -1,0 +1,2 @@
+import { TabsProps } from 'antd';
+
