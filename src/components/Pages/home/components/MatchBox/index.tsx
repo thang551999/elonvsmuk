@@ -7,17 +7,17 @@ import UnnameIcon from 'resources/icons/Socials/Unname';
 
 export const matchboxItem = [
   {
-    image: '/images/elon-avatar.webp',
+    image: '/images/elon-avatars.webp',
     name: 'Elon Win',
     btnText: 'Stake $EVSM',
   },
   {
-    image: '/images/mark-avatar.webp',
+    image: '/images/mark-avatars.webp',
     name: 'Mark Win',
     btnText: 'Stake $EVSM',
   },
   {
-    image: '/images/no-match-avatar.webp',
+    image: '/images/no-match-avatars.webp',
     name: 'No Match',
     btnText: 'Stake $EVSM',
   },
