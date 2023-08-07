@@ -34,7 +34,7 @@ const termsAndConditions = [
 const listIcon = [
   {
     component: <TelegramIcon key='telegram' />,
-    url: '',
+    url: 'https://t.me/evsmglobal',
   },
   {
     component: <TwitterIcon key='twitter' />,
@@ -44,10 +44,10 @@ const listIcon = [
     component: <UnnameIcon key='unname' />,
     url: 'https://bscscan.com/address/0xFA2e178842F46Ce56098b673cBf78164a37C4a8e',
   },
-  {
-    component: <Image src='/icons/discord-icon.webp' width={60} height={60} alt='discord' key='discord' />,
-    url: 'https://www.evsm.org/',
-  },
+  // {
+  //   component: <Image src='/icons/discord-icon.webp' width={60} height={60} alt='discord' key='discord' />,
+  //   url: 'https://www.evsm.org/',
+  // },
 ];
 
 const MatchBox = () => {

@@ -30,13 +30,13 @@ const TaticSection = () => {
 
       <div className='tatic-section__image'>
         <Image
-          src='/images/musk-vs-zuck-tatic.webp'
+          src='/images/musk-vs-zuck-tatics.webp'
           alt='musk vs zuck'
           width={xl ? 1028 : 350}
           height={xl ? 1028 : 350}
           quality={100}
           placeholder='blur'
-          blurDataURL='/images/musk-vs-zuck-tatic.webp'
+          blurDataURL='/images/musk-vs-zuck-tatics.webp'
           objectFit='cover'
         />
       </div>
