@@ -36,7 +36,7 @@ const expectationPhase = [
 
 const Expectation = () => {
   return (
-    <div className='expectation-container'>
+    <div className='expectation-container' id='road-map'>
       <div className='expectation-wrapper'>
         <Image
           src='/images/meme/evsm-meme.webp'

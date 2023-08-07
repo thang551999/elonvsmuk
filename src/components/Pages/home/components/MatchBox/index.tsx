@@ -1,4 +1,5 @@
 import Image from 'next/legacy/image';
+import Link from 'next/link';
 
 import TelegramIcon from 'resources/icons/Socials/Telegram';
 import TwitterIcon from 'resources/icons/Socials/Twitter';
@@ -31,10 +32,22 @@ const termsAndConditions = [
 ];
 
 const listIcon = [
-  <TelegramIcon key='telegram' />,
-  <TwitterIcon key='twitter' />,
-  <UnnameIcon key='unname' />,
-  <Image src='/icons/discord-icon.webp' width={60} height={60} alt='discord' key='discord' />,
+  {
+    component: <TelegramIcon key='telegram' />,
+    url: '',
+  },
+  {
+    component: <TwitterIcon key='twitter' />,
+    url: 'https://twitter.com/evsmtoken',
+  },
+  {
+    component: <UnnameIcon key='unname' />,
+    url: 'https://bscscan.com/address/0xFA2e178842F46Ce56098b673cBf78164a37C4a8e',
+  },
+  {
+    component: <Image src='/icons/discord-icon.webp' width={60} height={60} alt='discord' key='discord' />,
+    url: 'https://www.evsm.org/',
+  },
 ];
 
 const MatchBox = () => {
@@ -65,8 +78,10 @@ const MatchBox = () => {
       </div>
 
       <div className='match-box-section__socials'>
-        {listIcon.map((icon) => (
-          <div key={icon.key}>{icon}</div>
+        {listIcon.map((icon, idx: number) => (
+          <Link key={idx} href={icon.url} target='_blank'>
+            <div>{icon.component}</div>
+          </Link>
         ))}
       </div>
 

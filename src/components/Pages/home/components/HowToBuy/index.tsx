@@ -39,7 +39,7 @@ const HowToBuy = () => {
   const { md } = useBreakpoint();
 
   return (
-    <div className='how-to-buy'>
+    <div className='how-to-buy' id='how-to-buy'>
       <div className='how-to-buy-background'>
         <Image
           src='/images/how-to-buy-background.webp'

@@ -19,23 +19,24 @@ const AppLayout: FC<
     faviconImageUrl?: string;
     additionalLinkTags?: LinkTag[];
   }>
-> = ({ children, title = '', className, socialImageUrl, faviconImageUrl, metaDescription, additionalLinkTags }) => (
-  <>
-    <AppSeo
-      title={title}
-      socialImageUrl={socialImageUrl}
-      faviconImageUrl={faviconImageUrl}
-      metaDescription={metaDescription}
-      additionalLinkTags={additionalLinkTags}
-    />
-    <LayoutContainer className={classNames('layout-container', className)}>
-      <LayoutContainer>
-        <AppHeader />
-        <AppContent>{children}</AppContent>
-        <AppFooter />
+> = ({ children, title = '', className, socialImageUrl, faviconImageUrl, metaDescription, additionalLinkTags }) => {
+  return (
+    <>
+      <AppSeo
+        title={title}
+        socialImageUrl={socialImageUrl}
+        faviconImageUrl={faviconImageUrl}
+        metaDescription={metaDescription}
+        additionalLinkTags={additionalLinkTags}
+      />
+      <LayoutContainer className={classNames('layout-container', className)}>
+        <LayoutContainer>
+          <AppHeader />
+          <AppContent>{children}</AppContent>
+          <AppFooter />
+        </LayoutContainer>
       </LayoutContainer>
-    </LayoutContainer>
-  </>
-);
-
+    </>
+  );
+};
 export default AppLayout;

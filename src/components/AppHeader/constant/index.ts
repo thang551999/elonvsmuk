@@ -5,18 +5,18 @@ export const MenuData = [
   },
   {
     label: 'How To Buy',
-    url: '/how-to-buy',
+    url: '/#how-to-buy',
   },
   {
     label: 'NFT Marketplace (Coming Soon)',
-    url: '/marketplace',
+    url: '',
   },
   {
     label: 'Roadmap',
-    url: '/roadmap',
+    url: '/#road-map',
   },
   {
     label: 'Whitepaper',
-    url: '/whitepaper',
+    url: 'https://elonvsmark.gitbook.io/docs/',
   },
 ];

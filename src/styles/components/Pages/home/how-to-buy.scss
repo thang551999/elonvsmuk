@@ -10,6 +10,10 @@
 
   position: relative;
 
+  @media screen and (max-width: 768px) {
+    overflow: hidden;
+  }
+
   &-background {
     width: 1020px;
     height: 1020px;

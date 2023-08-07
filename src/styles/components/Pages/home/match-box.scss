@@ -186,9 +186,10 @@
 
     @media screen and (max-width: 768px) {
       font-size: 12px;
-      max-width: 100%;
+      max-width: calc(100% - 48px);
       width: 100%;
       margin: 10px auto;
+      overflow-wrap: break-word;
     }
 
     br {
