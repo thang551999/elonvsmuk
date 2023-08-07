@@ -27,7 +27,7 @@ const HomePage: FC<PropsWithChildren> = ({ children }) => {
 
       <TaticSection />
 
-      <MillionsOfFan />
+      {/* <MillionsOfFan /> */}
 
       <GuessWinner />
 

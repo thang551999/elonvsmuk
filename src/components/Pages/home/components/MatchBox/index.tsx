@@ -73,7 +73,7 @@ const MatchBox = () => {
       <div className='evsm-contract'>
         $EVSM contract:
         <br />
-        0x121902748932753552ch2390487
+        0x69e8D8502e693855C9b73D7f20174A609DBC7809
       </div>
     </div>
   );

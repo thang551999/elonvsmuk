@@ -24,7 +24,7 @@ const Tokenomics = () => {
         />
 
         <ul className='chart-description'>
-          <li>Tax: 1/1</li>
+          {/* <li>Tax: 1/1</li> */}
           <li>CEX: 10%</li>
           <li>Marketing: 5%</li>
           <li>Team: 5%</li>
