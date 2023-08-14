@@ -46,7 +46,9 @@ const listIcon = [
     url: 'https://bscscan.com/address/0xFA2e178842F46Ce56098b673cBf78164a37C4a8e',
   },
   {
-    component: <PinkSaleIcon key='pinksale' width={60} height={60} />,
+    // component: <PinkSaleIcon key='pinksale' width={60} height={60} />,
+    component: <Image src='/images/logo/pinksale-logo.png' alt='pink-sale' width={60} height={60} objectFit='cover' />,
+
     url: 'https://www.pinksale.finance/launchpad/0x93893306c596921944bADF1be2b401164A788FE3?chain=BSC&fbclid=IwAR0AS3GKD__2cX5YNn0LMP-1cwOTdeg_k35ud0yxmcYAMs69dGB3yQ3oPrc',
   },
   // {
