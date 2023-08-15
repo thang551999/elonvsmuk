@@ -6,7 +6,7 @@ import CreateLaunchpadPage from 'components/Pages/launchpad/create';
 import { NextPageWithLayout } from 'pages/_app';
 
 const CreateLaunchpad: NextPageWithLayout = () => (
-  <div className='create-launchpad-container'>
+  <div className='create-launchpad-container' style={{ marginTop: '100px' }}>
     <CreateLaunchpadPage />
   </div>
 );

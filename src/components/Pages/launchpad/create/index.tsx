@@ -38,13 +38,9 @@ const CreateLaunchpadPage = () => {
             <TextInput placeholder='Address' />
           </FormItem>
 
-          <FormItem name={CURRENCY} label='Currency'>
-            <FormCheckbox />
-          </FormItem>
-
           {isConnected ? (
             <Button htmlType='submit' className='app-button'>
-              Next
+              Stake
             </Button>
           ) : (
             <ConnectWallet />

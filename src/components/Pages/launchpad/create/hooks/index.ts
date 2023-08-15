@@ -39,7 +39,9 @@ const schema = () =>
 export const useCreateLaunchpad = () => {
   const methods = useForm({ defaultValues: DEFAULT_CREATE_LAUNCHPAD_VALUES, resolver: zodResolver(schema()) });
 
-  const onSubmit = () => {};
+  const onSubmit = () => {
+    console.log('123123 :>> ', 123123);
+  };
 
   return { methods, onSubmit };
 };
