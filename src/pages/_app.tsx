@@ -6,9 +6,8 @@ import type { Session } from 'next-auth';
 import { SessionProvider as AuthProvider } from 'next-auth/react';
 import { appWithTranslation } from 'next-i18next';
 
-import { ThirdwebProvider } from '@thirdweb-dev/react';
-
 import AppConnectWalletWrapper from 'components/AppConnectWalletWrapper';
+import ThirdwebProviderWrapper from 'components/WalletConnectProvider';
 
 import 'react-toastify/dist/ReactToastify.css';
 import '../styles/_app.scss';
@@ -27,28 +26,13 @@ const MyApp = ({ Component, pageProps: { session, ...pageProps } }: AppPropsWith
   return (
     <main>
       <ToastContainer limit={1} />
-      <ThirdwebProvider
-        activeChain='ethereum'
-        // supportedWallets={[metamaskWallet(), coinbaseWallet(), walletConnect()]}
-        // activeChain={{
-        //   chainId: 59140,
-        //   rpc: ['<your-rpc-url-here>'],
-        //   nativeCurrency: {
-        //     decimals: 18,
-        //     name: 'Consensys ETH',
-        //     symbol: 'crETH',
-        //   },
-        //   shortName: 'czkevm',
-        //   slug: 'consensys',
-        //   testnet: true,
-        //   chain: 'ConsenSys',
-        //   name: 'ConsenSys zkEVM Testnet',
-        // }}
-      >
+      <ThirdwebProviderWrapper>
         <AuthProvider session={session} refetchOnWindowFocus={false}>
-          <AppConnectWalletWrapper>{getLayout(<Component {...pageProps} />)}</AppConnectWalletWrapper>
+          <AppConnectWalletWrapper>
+            {getLayout(<Component {...pageProps} />)}
+          </AppConnectWalletWrapper>
         </AuthProvider>
-      </ThirdwebProvider>
+      </ThirdwebProviderWrapper>
     </main>
   );
 };

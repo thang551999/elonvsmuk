@@ -1,7 +1,6 @@
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 
-import PinkSaleIcon from 'resources/icons/Socials/PinkSale';
 import TelegramIcon from 'resources/icons/Socials/Telegram';
 import TwitterIcon from 'resources/icons/Socials/Twitter';
 import UnnameIcon from 'resources/icons/Socials/Unname';
@@ -47,7 +46,15 @@ const listIcon = [
   },
   {
     // component: <PinkSaleIcon key='pinksale' width={60} height={60} />,
-    component: <Image src='/images/logo/pinksale-logo.png' alt='pink-sale' width={60} height={60} objectFit='cover' />,
+    component: (
+      <Image
+        src='/images/logo/pinksale-logo.png'
+        alt='pink-sale'
+        width={60}
+        height={60}
+        objectFit='cover'
+      />
+    ),
 
     url: 'https://www.pinksale.finance/launchpad/0x93893306c596921944bADF1be2b401164A788FE3?chain=BSC&fbclid=IwAR0AS3GKD__2cX5YNn0LMP-1cwOTdeg_k35ud0yxmcYAMs69dGB3yQ3oPrc',
   },
@@ -58,6 +65,12 @@ const listIcon = [
 ];
 
 const MatchBox = () => {
+  const handleBet = async () => {
+    const amount = '100';
+    const type = 1;
+
+  };
+
   return (
     <div className='match-box-section'>
       <div className='match-box-section__elements'>
@@ -69,7 +82,7 @@ const MatchBox = () => {
 
             <p>{item.name}</p>
 
-            <button>{item.btnText}</button>
+            <button onClick={handleBet}>{item.btnText}</button>
           </div>
         ))}
       </div>
