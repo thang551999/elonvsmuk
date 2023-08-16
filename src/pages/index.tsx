@@ -6,11 +6,13 @@ import HomePage from 'components/Pages/home';
 
 import { NextPageWithLayout } from './_app';
 
-const Home: NextPageWithLayout = () => (
-  <div className='home-container'>
-    <HomePage />
-  </div>
-);
+const Home: NextPageWithLayout = () => {
+  return (
+    <div className='home-container'>
+      <HomePage />
+    </div>
+  );
+};
 
 Home.getLayout = function getLayout(page: ReactElement) {
   return (

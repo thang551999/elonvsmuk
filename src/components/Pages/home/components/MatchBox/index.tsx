@@ -1,9 +1,13 @@
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 
+import { Contract, ethers } from 'ethers';
+
 import TelegramIcon from 'resources/icons/Socials/Telegram';
 import TwitterIcon from 'resources/icons/Socials/Twitter';
 import UnnameIcon from 'resources/icons/Socials/Unname';
+
+import stake from '../../../../../constant/idl/stake.json';
 
 export const matchboxItem = [
   {
@@ -66,9 +70,26 @@ const listIcon = [
 
 const MatchBox = () => {
   const handleBet = async () => {
-    const amount = '100';
-    const type = 1;
+    const FakeAmount = 100;
+    const FakeType = 1;
 
+    const httpProvider = new ethers.providers.JsonRpcProvider(
+      'https://old-fittest-cherry.bsc.quiknode.pro/fe7c392aa648e17f109862086576beb259ac5049/',
+    );
+
+    const signer = httpProvider.getSigner();
+    console.log('signer :>> ', signer);
+
+    const contract = new Contract(
+      '0x8d6E0C69cAa6Aa2FACb30aEf285Cd5dC49D63d74',
+      stake,
+      signer,
+      // httpProvider,
+    );
+    console.log('contract :>> ', contract);
+
+    const betFunc = await contract.bet(FakeAmount, FakeType);
+    console.log('betFunc :>> ', betFunc);
   };
 
   return (

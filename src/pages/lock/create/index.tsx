@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import { GetServerSideProps } from 'next';
 
-import { Web3Button } from '@thirdweb-dev/react';
+import { useContract, Web3Button } from '@thirdweb-dev/react';
 
 import AppLayout from 'components/Layout/Public';
 import CreateLockPage from 'components/Pages/lock/create';
