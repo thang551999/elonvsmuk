@@ -1,6 +1,7 @@
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 
+import { useAddress } from '@thirdweb-dev/react';
 import { Contract, ethers } from 'ethers';
 
 import TelegramIcon from 'resources/icons/Socials/Telegram';
@@ -69,16 +70,15 @@ const listIcon = [
 ];
 
 const MatchBox = () => {
+  const address = useAddress();
+
   const handleBet = async () => {
     const FakeAmount = 100;
     const FakeType = 1;
 
-    const httpProvider = new ethers.providers.JsonRpcProvider(
-      'https://old-fittest-cherry.bsc.quiknode.pro/fe7c392aa648e17f109862086576beb259ac5049/',
-    );
+    const httpProvider = new ethers.providers.Web3Provider(window.ethereum);
 
     const signer = httpProvider.getSigner();
-    console.log('signer :>> ', signer);
 
     const contract = new Contract(
       '0x8d6E0C69cAa6Aa2FACb30aEf285Cd5dC49D63d74',
@@ -103,7 +103,9 @@ const MatchBox = () => {
 
             <p>{item.name}</p>
 
-            <button onClick={handleBet}>{item.btnText}</button>
+            <button onClick={handleBet} disabled={!address}>
+              {item.btnText}
+            </button>
           </div>
         ))}
       </div>
